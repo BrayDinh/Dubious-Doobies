@@ -61,6 +61,7 @@ public class TutorialMod {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
+            event.accept(ModBlocks.MARIJUANA_TREE);
         }
     }
 
