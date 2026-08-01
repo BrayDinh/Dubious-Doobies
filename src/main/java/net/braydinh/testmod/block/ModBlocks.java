@@ -24,7 +24,7 @@ public class ModBlocks {
 
    public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBLock("bismuth_block",
            () -> new Block(BlockBehaviour.Properties.of()
-                   .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                   .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
    public static final DeferredBlock<Block> BISMUTH_ORE = registerBLock("bismuth_ore",
            () -> new DropExperienceBlock(UniformInt.of(2, 4),
@@ -32,11 +32,11 @@ public class ModBlocks {
 
    public static final DeferredBlock<Block> MARIJUANA_TREE = registerBLock("marijuana_tree",
            () -> new DropExperienceBlock(UniformInt.of(10, 100),
-                   BlockBehaviour.Properties.of().strength(1f).sound(SoundType.AZALEA_LEAVES).noOcclusion().noCollission()));
+                   BlockBehaviour.Properties.of().strength(0.05f).sound(SoundType.AZALEA_LEAVES).noOcclusion().noCollission()));
 
    public static final DeferredBlock<Block> TOBACCO_PLANT = registerBLock("tobacco_plant",
            () -> new DropExperienceBlock(UniformInt.of(10, 100),
-                   BlockBehaviour.Properties.of().strength(1f).sound(SoundType.GRASS).noOcclusion().noCollission()));
+                   BlockBehaviour.Properties.of().strength(0.05f).sound(SoundType.GRASS).noOcclusion().noCollission()));
 
     private static <T extends Block> DeferredBlock<T> registerBLock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

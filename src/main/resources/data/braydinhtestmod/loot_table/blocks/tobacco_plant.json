@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "braydinhtestmod:tobacco_leaf"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "braydinhtestmod:blocks/tobacco_plant"
+}
