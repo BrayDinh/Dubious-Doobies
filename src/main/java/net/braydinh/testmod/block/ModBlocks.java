@@ -34,6 +34,7 @@ public class ModBlocks {
            () -> new DropExperienceBlock(UniformInt.of(10, 100),
                    BlockBehaviour.Properties.of().strength(1f).sound(SoundType.AZALEA_LEAVES).noOcclusion().noCollission()));
 
+
     private static <T extends Block> DeferredBlock<T> registerBLock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

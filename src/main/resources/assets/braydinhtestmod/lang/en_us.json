@@ -9,7 +9,11 @@
 
   "block.braydinhtestmod.marijuana_tree": "Marijuana Tree",
   "block.braydinhtestmod.bismuth_block": "Block of Bismuth",
-  "block.braydinhtestmod.bismuth_ore": "Bismuth Ore"
+  "block.braydinhtestmod.bismuth_ore": "Bismuth Ore",
+
+
+  "creativetab.braydinhtestmod.bismuth_items": "Bismuth Items",
+  "creativetab.braydinhtestmod.bismuth_blocks": "Bismuth Blocks"
 
 
 }
