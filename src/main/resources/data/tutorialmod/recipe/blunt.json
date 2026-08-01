@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "braydinhtestmod:marijuana"
+    },
+    "T": {
+      "item": "braydinhtestmod:tobacco_leaf"
+    }
+  },
+  "pattern": [
+    "TWT",
+    "TWT",
+    "TWT"
+  ],
+  "result": {
+    "count": 3,
+    "id": "braydinhtestmod:blunt"
+  }
+}
