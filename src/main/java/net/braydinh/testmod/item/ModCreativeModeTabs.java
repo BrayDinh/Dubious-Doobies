@@ -39,6 +39,18 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final Supplier<CreativeModeTab> DR_DINH_STASH = CREATIVE_MODE_TAB.register("dr_dinh_stash",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLUNT.get()))
+                    .title(Component.translatable("creativetab.braydinhtestmod.dr_dinh_stash"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModItems.MARIJUANA);
+                        output.accept(ModItems.TOBACCO_LEAF);
+                        output.accept(ModBlocks.TOBACCO_PLANT);
+                        output.accept(ModBlocks.MARIJUANA_TREE);
+                        output.accept(ModItems.BLUNT);
+
+                    }).build());
+
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

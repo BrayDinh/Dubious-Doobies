@@ -21,6 +21,12 @@ public class ModItems {
     public static final DeferredItem<Item> MARIJUANA = ITEMS.register("marijuana",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> BLUNT = ITEMS.register("blunt",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> TOBACCO_LEAF = ITEMS.register("tobacco_leaf",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
 

@@ -4,6 +4,9 @@
   "item.braydinhtestmod.bismuth": "Bismuth",
   "item.braydinhtestmod.raw_bismuth": "Raw Bismuth",
   "item.braydinhtestmod.marijuana": "Marijuana",
+  "item.braydinhtestmod.blunt": "Blunt",
+  "item.braydinhtestmod.tobacco_leaf": "Tobacco Leaf",
+  "item.braydinhtestmod.tobacco_plant": "Tobacco Plant",
 
 
 
@@ -13,7 +16,8 @@
 
 
   "creativetab.braydinhtestmod.bismuth_items": "Bismuth Items",
-  "creativetab.braydinhtestmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.braydinhtestmod.bismuth_blocks": "Bismuth Blocks",
+  "creativetab.braydinhtestmod.dr_dinh_stash": "Dr. Dinh's Private Stash"
 
 
 }

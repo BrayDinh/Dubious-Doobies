@@ -34,6 +34,9 @@ public class ModBlocks {
            () -> new DropExperienceBlock(UniformInt.of(10, 100),
                    BlockBehaviour.Properties.of().strength(1f).sound(SoundType.AZALEA_LEAVES).noOcclusion().noCollission()));
 
+   public static final DeferredBlock<Block> TOBACCO_PLANT = registerBLock("tobacco_plant",
+           () -> new DropExperienceBlock(UniformInt.of(10, 100),
+                   BlockBehaviour.Properties.of().strength(1f).sound(SoundType.GRASS).noOcclusion().noCollission()));
 
     private static <T extends Block> DeferredBlock<T> registerBLock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

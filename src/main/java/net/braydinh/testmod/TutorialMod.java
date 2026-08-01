@@ -60,12 +60,15 @@ public class TutorialMod {
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
             event.accept(ModItems.MARIJUANA);
+            event.accept(ModItems.BLUNT);
+            event.accept(ModItems.TOBACCO_LEAF);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
             event.accept(ModBlocks.MARIJUANA_TREE);
+            event.accept(ModBlocks.TOBACCO_PLANT);
         }
     }
 
