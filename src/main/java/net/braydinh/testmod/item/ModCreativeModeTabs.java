@@ -47,6 +47,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TOBACCO_LEAF);
                         output.accept(ModBlocks.TOBACCO_PLANT);
                         output.accept(ModBlocks.MARIJUANA_TREE);
+                        output.accept(ModItems.MARIJUANA_SEEDS);
+                        output.accept(ModBlocks.MARIJUANA_CROP);
+                        output.accept(ModItems.TOBACCO_SEEDS);
                         output.accept(ModItems.BLUNT);
 
                     }).build());

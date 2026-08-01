@@ -1,6 +1,7 @@
 package net.braydinh.testmod;
 
 import net.braydinh.testmod.block.ModBlocks;
+import net.braydinh.testmod.block.custom.MarijuanaCropBlock;
 import net.braydinh.testmod.item.ModCreativeModeTabs;
 import net.braydinh.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -62,6 +63,7 @@ public class TutorialMod {
             event.accept(ModItems.MARIJUANA);
             event.accept(ModItems.BLUNT);
             event.accept(ModItems.TOBACCO_LEAF);
+            event.accept(ModItems.TOBACCO_SEEDS);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
@@ -69,6 +71,8 @@ public class TutorialMod {
             event.accept(ModBlocks.BISMUTH_ORE);
             event.accept(ModBlocks.MARIJUANA_TREE);
             event.accept(ModBlocks.TOBACCO_PLANT);
+            event.accept(ModBlocks.MARIJUANA_CROP);
+            event.accept(ModBlocks.TOBACCO_CROP);
         }
     }
 

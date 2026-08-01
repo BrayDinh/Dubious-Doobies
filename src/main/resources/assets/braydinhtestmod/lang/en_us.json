@@ -7,9 +7,11 @@
   "item.braydinhtestmod.blunt": "Blunt",
   "item.braydinhtestmod.tobacco_leaf": "Tobacco Leaf",
   "item.braydinhtestmod.tobacco_plant": "Tobacco Plant",
+  "item.braydinhtestmod.marijuana_seeds": "Marijuana Seeds",
+  "item.braydinhtestmod.tobacco_seeds": "Tobacco Seeds",
 
-
-
+  "block.braydinhtestmod.tobacco_crop": "Tobacco Crop",
+  "block.braydinhtestmod.marijuana_crop": "Marijuana Crop",
   "block.braydinhtestmod.marijuana_tree": "Marijuana Tree",
   "block.braydinhtestmod.bismuth_block": "Block of Bismuth",
   "block.braydinhtestmod.bismuth_ore": "Bismuth Ore",

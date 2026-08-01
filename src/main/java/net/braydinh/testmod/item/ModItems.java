@@ -1,7 +1,9 @@
 package net.braydinh.testmod.item;
 
 import net.braydinh.testmod.TutorialMod;
+import net.braydinh.testmod.block.ModBlocks;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -26,6 +28,17 @@ public class ModItems {
 
     public static final DeferredItem<Item> TOBACCO_LEAF = ITEMS.register("tobacco_leaf",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> MARIJUANA_SEEDS = ITEMS.register("marijuana_seeds",
+            () -> new ItemNameBlockItem(
+                    ModBlocks.MARIJUANA_CROP.get(),
+                    new Item.Properties()
+            ));
+    public static final DeferredItem<Item> TOBACCO_SEEDS = ITEMS.register("tobacco_seeds",
+            () -> new ItemNameBlockItem(
+                    ModBlocks.TOBACCO_CROP.get(),
+                    new Item.Properties()
+            ));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

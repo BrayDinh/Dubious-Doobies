@@ -1,11 +1,14 @@
 package net.braydinh.testmod.block;
 
 import net.braydinh.testmod.TutorialMod;
+import net.braydinh.testmod.block.custom.MarijuanaCropBlock;
+import net.braydinh.testmod.block.custom.TobaccoCropBlock;
 import net.braydinh.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -37,6 +40,28 @@ public class ModBlocks {
    public static final DeferredBlock<Block> TOBACCO_PLANT = registerBLock("tobacco_plant",
            () -> new DropExperienceBlock(UniformInt.of(10, 100),
                    BlockBehaviour.Properties.of().strength(0.05f).sound(SoundType.GRASS).noOcclusion().noCollission()));
+
+    public static final DeferredBlock<Block> MARIJUANA_CROP =
+            BLOCKS.register("marijuana_crop",
+                    () -> new MarijuanaCropBlock(
+                            BlockBehaviour.Properties.of()
+                                    .noCollission()
+                                    .randomTicks()
+                                    .instabreak()
+                                    .sound(SoundType.CROP)
+                    ));
+
+    public static final DeferredBlock<Block> TOBACCO_CROP =
+            BLOCKS.register("tobacco_crop",
+                    () -> new TobaccoCropBlock(
+                            BlockBehaviour.Properties.of()
+                                    .noCollission()
+                                    .noOcclusion()
+                                    .randomTicks()
+                                    .instabreak()
+                                    .sound(SoundType.CROP)
+                    ));
+
 
     private static <T extends Block> DeferredBlock<T> registerBLock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

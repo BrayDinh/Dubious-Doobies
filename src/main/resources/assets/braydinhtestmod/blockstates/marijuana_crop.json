@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "age=0": { "model": "braydinhtestmod:block/marijuana_stage0" },
+    "age=1": { "model": "braydinhtestmod:block/marijuana_stage0" },
+
+    "age=2": { "model": "braydinhtestmod:block/marijuana_stage1" },
+    "age=3": { "model": "braydinhtestmod:block/marijuana_stage1" },
+
+    "age=4": { "model": "braydinhtestmod:block/marijuana_stage2" },
+    "age=5": { "model": "braydinhtestmod:block/marijuana_stage2" },
+
+    "age=6": { "model": "braydinhtestmod:block/marijuana_stage3" },
+    "age=7": { "model": "braydinhtestmod:block/marijuana_stage3" }
+  }
+}
