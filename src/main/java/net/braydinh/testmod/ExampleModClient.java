@@ -18,11 +18,27 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
 @EventBusSubscriber(modid = TutorialMod.MOD_ID, value = Dist.CLIENT)
 public class ExampleModClient {
-    public ExampleModClient(ModContainer container) {
-        // Allows NeoForge to create a config screen for this mod's configs.
-        // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
-        // Do not forget to add translations for your config options to the en_us.json file.
-        container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+    public ExampleModClient(
+            IEventBus modEventBus,
+            ModContainer container
+    ) {
+        container.registerExtensionPoint(
+                IConfigScreenFactory.class,
+                ConfigurationScreen::new
+        );
+
+        modEventBus.addListener(
+                ExampleModClient::registerClientExtensions
+        );
+    }
+
+    private static void registerClientExtensions(
+            RegisterClientExtensionsEvent event
+    ) {
+        event.registerItem(
+                new BluntClientExtensions(),
+                ModItems.BLUNT.get()
+        );
     }
 
     @SubscribeEvent
