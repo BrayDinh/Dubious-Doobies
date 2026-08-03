@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "BRAYDINHTESTMOD_SMOKING",
+      "constructor": "(ZLnet/neoforged/neoforge/client/IArmPoseTransformer;)V",
+      "parameters": {
+        "class": "net/braydinh/testmod/BluntArmPose",
+        "field": "SMOKING_POSE"
+      }
+    }
+  ]
+}
