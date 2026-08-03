@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.braydinh.testmod.item.BluntItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MOD_ID);
@@ -24,7 +25,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> BLUNT = ITEMS.register("blunt",
-            () -> new Item(new Item.Properties()));
+            () -> new BluntItem(new Item.Properties().stacksTo(16)));
 
     public static final DeferredItem<Item> TOBACCO_LEAF = ITEMS.register("tobacco_leaf",
             () -> new Item(new Item.Properties()));
@@ -40,8 +41,10 @@ public class ModItems {
                     new Item.Properties()
             ));
 
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
 
     }
+
 }
