@@ -10,7 +10,7 @@ import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
-import net.minecraft.client.model.geom.ModelPart;
+
 
 public class BluntClientExtensions implements IClientItemExtensions {
 
@@ -102,6 +102,20 @@ public class BluntClientExtensions implements IClientItemExtensions {
         return true;
     }
 
+    @Override
+    public HumanoidModel.ArmPose getArmPose(
+            LivingEntity entity,
+            InteractionHand hand,
+            ItemStack stack
+    ) {
+        if (entity.isUsingItem()
+                && entity.getUseItemRemainingTicks() > 0
+                && entity.getUsedItemHand() == hand) {
+            return BluntArmPose.SMOKING_POSE.getValue();
+        }
+
+        return null;
+    }
 
 
 }
